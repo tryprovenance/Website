@@ -1114,8 +1114,19 @@ img, svg { display: block; }
   .footer__links { flex-direction: column; gap: 8px; align-items: center; }
 
   .horizontal__header { padding: 60px 0 0; }
-  .horizontal__track { padding-left: 24px; }
-  .horizontal__panel { padding: 32px 32px 60px; }
+  .horizontal__track {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding: 0 24px 24px;
+  }
+  .horizontal__track::-webkit-scrollbar { display: none; }
+  .horizontal__panel {
+    padding: 32px 32px 60px;
+    scroll-snap-align: start;
+  }
 
   .demo-page { padding: 100px 0 60px; }
 }
