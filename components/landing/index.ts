@@ -1,0 +1,10 @@
+export { MotionProvider } from "./motion-provider";
+export { LandingNav } from "./nav";
+export { Hero } from "./hero";
+export { ProblemSection } from "./problem-section";
+export { SolutionSection } from "./solution-section";
+export { WhoItsForSection } from "./who-its-for-section";
+export { HowItWorksSection } from "./how-it-works-section";
+export { WhyNowSection } from "./why-now-section";
+export { CtaSection } from "./cta-section";
+export { LandingFooter } from "./footer";
